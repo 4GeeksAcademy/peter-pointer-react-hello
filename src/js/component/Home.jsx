@@ -1,5 +1,8 @@
 import React from "react";  // 1. Importo React
 import rigoImage from "../../img/rigo-baby.jpg";  // Include images into your bundle
+import Navbar from "./Navbar.jsx.";
+import { Footer } from "./Footer.jsx";
+import { Jumbotron } from "./Jumbotron.jsx";
 
 // 2. Create your first component with PascalCase
 const Home = () => {
@@ -8,18 +11,19 @@ const Home = () => {
 	// 4. Retorno un solo elemento HTML
 	return (
 		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
+			<Navbar />
+			<h1 className="text-center mt-5">{"Intro React"}</h1>
+			<Jumbotron />
+			{/*
 			<p>
 				<img src={rigoImage} />
 			</p>
+			
 			<a href="#" className="btn btn-success">
 				If you see this green button... bootstrap is working...
 			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+			*/}			
+			<Footer/>
 		</div>
 	);
 };
