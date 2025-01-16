@@ -6,6 +6,7 @@ import rigoImage from "../../img/rigo-baby.jpg";  // Include images into your bu
 const Home = () => {
 	// 3. Code JS
 	
+
 	// 4. Retorno un solo elemento HTML
 	return (
 		<div className="text-center">
@@ -28,7 +29,6 @@ const Home = () => {
 
 // 5. Exporto mi componente
 export default Home;
-
 // 6.
 
 // 7.
