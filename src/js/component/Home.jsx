@@ -1,6 +1,8 @@
 import React from "react";  // 1. Importo React
-import rigoImage from "../../img/rigo-baby.jpg";  // Include images into your bundle
-
+import rigoImage from "../../img/rigo-baby.jpg";  // Include images into your bundle 
+// 6. Importar el componente y 7. Utilizar en otro componente
+import Navbar from "./Navbar.jsx"; // Componente con export default
+import { Footer } from "./Footer.jsx"; // Componente con export const
 
 // 2. Create your first component with PascalCase
 const Home = () => {
@@ -10,19 +12,15 @@ const Home = () => {
 	// 4. Retorno un solo elemento HTML
 	return (
 		<div className="text-center">
-			
-			<h1 className="text-center mt-5">{"Intro React"}</h1>
-			
-			
+			<Navbar />
+			<h1 className="text-center mt-5">Hello Rigo</h1>			
 			<p>
 				<img src={rigoImage} />
-			</p>
-			
+			</p>			
 			<a href="#" className="btn btn-success">
 				If you see this green button... bootstrap is working...
-			</a>
-					
-		
+			</a>				
+			<Footer/>	
 		</div>
 	);
 };
