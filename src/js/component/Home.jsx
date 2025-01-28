@@ -4,24 +4,46 @@ import rigoImage from "../../img/rigo-baby.jpg";  // Include images into your bu
 import Navbar from "./Navbar.jsx"; // Componente con export default
 import { Footer } from "./Footer.jsx"; // Componente con export const
 import { Jumbotron } from "./Jumbotron.jsx"; // Componente con export const
+import { Title } from "./Title.jsx";
+import { Card } from "./Card.jsx";
+import { BtnCallToAction } from "./BtnCallToAction.jsx";
+import { SimpleCounter } from "./SimpleCounter.jsx";
+import { ExampleControlledInputs } from "./ExampleControlledInputs.jsx";
 
 // 2. Create your first component with PascalCase
 const Home = () => {
 	// 3. Code JS
-	
 
 	// 4. Retorno un solo elemento HTML
 	return (
-		<div className="text-center">
+		<div className="container text-center">
 			<Navbar />
-			<h1 className="text-center mt-5">{"Intro React"}</h1>	
-			<Jumbotron />		
-			{/*
-			<p>
-				<img src={rigoImage} />
-			</p>
-			*/}							
-			<Footer/>	
+			{/* <Jumbotron /> */}
+			<Title text="Forms" color="primary"/>
+			<ExampleControlledInputs />
+			{/* <BtnCallToAction /> */}
+			{/* <SimpleCounter /> */}
+			{/* <div className="container d-flex justify-content-center">
+				<Card
+					image="https://randomuser.me/api/portraits/lego/6.jpg"
+					title="I'm a Mexican Lego"
+					description="Some quick example text to build on the card title and make up the bulk of the card's content."
+					button="Learn More"
+				/>
+				<Card
+					image="https://randomuser.me/api/portraits/lego/3.jpg"
+					title="I'm a Doctor Lego"
+					description="Some quick example text to build on the card title and make up the bulk of the card's content."
+					button="Learn More"
+				/>
+				<Card
+					image="https://randomuser.me/api/portraits/lego/4.jpg"
+					title="I'm a normal Lego"
+					description="Some quick example text to build on the card title and make up the bulk of the card's content."
+					button="Learn More"
+				/>
+			</div> */}
+			<Footer />
 		</div>
 	);
 };
