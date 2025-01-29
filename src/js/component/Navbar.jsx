@@ -4,7 +4,7 @@ import { BtnCallToAction } from "./BtnCallToAction.jsx";
 // 2. Crear el componente
 const Navbar = () => {
     // 3. Code JS
-    const cohorte = "Spain-93"
+    const cohorte = "Pedro Florit Docavo"
     // 4. Return elemento HTML
     return (
         <nav className="navbar navbar-expand-md navbar-light bg-light">

@@ -9,6 +9,7 @@ import { Card } from "./Card.jsx";
 import { BtnCallToAction } from "./BtnCallToAction.jsx";
 import { SimpleCounter } from "./SimpleCounter.jsx";
 import { ExampleControlledInputs } from "./ExampleControlledInputs.jsx";
+import { TodoList } from "./TodoList.jsx";
 
 // 2. Create your first component with PascalCase
 const Home = () => {
@@ -19,8 +20,9 @@ const Home = () => {
 		<div className="container text-center">
 			<Navbar />
 			{/* <Jumbotron /> */}
-			<Title text="Forms" color="primary"/>
-			<ExampleControlledInputs />
+			{/* <Title text="Forms" color="primary"/> */}
+			<TodoList />
+			{/* <ExampleControlledInputs /> */}
 			{/* <BtnCallToAction /> */}
 			{/* <SimpleCounter /> */}
 			{/* <div className="container d-flex justify-content-center">

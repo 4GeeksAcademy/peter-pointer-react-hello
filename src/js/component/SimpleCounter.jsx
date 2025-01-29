@@ -1,8 +1,7 @@
 import React, { use, useEffect, useState } from "react";
 import { Title } from "./Title.jsx";
 import ReactDOM from 'react-dom'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock, faStopwatch } from "@fortawesome/free-solid-svg-icons";
+
 
 export const SimpleCounter = () => {
     const [counter, setCounter] = useState(0);
@@ -13,7 +12,7 @@ export const SimpleCounter = () => {
 
     const handleStart = () => {
         setIsRunning(!isRunning);
-        setIcon("<FontAwesomeIcon icon={faStopwatch}/>")
+        setIcon("stopwatch")
         setSubtitle({ text: "Chronometer", color: "warning" });
         // opción 1
         if (isRunning) {
@@ -51,7 +50,7 @@ export const SimpleCounter = () => {
             <Title text="Simple Counter" color="success" />
             <h2 className={`text-${subtitle.color}`}>{subtitle.text}</h2>
             <div className="big-counter">
-                <div><FontAwesomeIcon icon={faClock}/></div>
+                <div><i className={`fa fa-${icon}`}></i></div>
                 <div>{Math.floor(counter / 10000000 % 10)}</div>
                 <div>{Math.floor(counter / 1000000 % 10)}</div>
                 <div>{Math.floor(counter / 100000 % 10)}</div>

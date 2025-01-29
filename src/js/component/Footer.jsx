@@ -9,8 +9,7 @@ export const Footer = () => {
         <div className="container">
             <hr />
             <p>
-                Made by {" "}
-                <a href="http://www.4geeksacademy.com">4geeksacademy</a>, with love!
+                Made by {"Pedro"}, with love <i className="fa fa-heart text-danger"></i>
             </p>
         </div>
     )
