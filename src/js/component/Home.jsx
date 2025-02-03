@@ -10,6 +10,7 @@ import { BtnCallToAction } from "./BtnCallToAction.jsx";
 import { SimpleCounter } from "./SimpleCounter.jsx";
 import { ExampleControlledInputs } from "./ExampleControlledInputs.jsx";
 import { TodoList } from "./TodoList.jsx";
+import { ExampleFetchComplex } from "./ExampleFetchComplex.jsx";
 
 // 2. Create your first component with PascalCase
 const Home = () => {
@@ -21,7 +22,8 @@ const Home = () => {
 			<Navbar />
 			{/* <Jumbotron /> */}
 			{/* <Title text="Forms" color="primary"/> */}
-			<TodoList />
+			{/* <TodoList /> */}
+			<ExampleFetchComplex/>
 			{/* <ExampleControlledInputs /> */}
 			{/* <BtnCallToAction /> */}
 			{/* <SimpleCounter /> */}
